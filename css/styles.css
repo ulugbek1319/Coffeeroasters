@@ -2,6 +2,12 @@
 :root {
   --text-color: #333;
   --accent-color-green: #0a775f;
+  --accent-color-green-80: rgba(10, 119, 95, 0.8);
+  --accent-color-green-60: rgba(10, 119, 95, 0.6);
+  --accent-color-light-brown: #c99b67;
+  --accent-color-light-brown-80: rgba(201, 155, 103, 0.8);
+  --accent-color-light-brown-60: rgba(201, 155, 103, 0.6);
+  --light-brawn: #f3d7b7;
   --outline-color: var(--accent-color-green);
 }
 
@@ -10,7 +16,7 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
-   url('../fonts/Roboto-Bold.woff') format('woff');
+  url('../fonts/Roboto-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -19,7 +25,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
-   url("../fonts/Roboto-Medium.woff") format("woff");
+  url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -28,7 +34,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
-   url("../fonts/Roboto-Regular.woff") format("woff");
+  url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -122,6 +128,50 @@ select:-webkit-autofill:focus {
 }
 
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.button-green {
+  background-color: var(--accent-color-green);
+  color: #fff;
+}
+
+.button-green:hover {
+  background-color: var(--accent-color-green-80);
+}
+
+.button-green:active {
+  background-color: var(--accent-color-green-60);
+}
+
+.button-brawn {
+  background-color: var(--accent-color-light-brown);
+  color: #fff;
+}
+
+.button-brawn:hover {
+  background-color: var(--accent-color-light-brown-80);
+}
+
+.button-brawn:active {
+  background-color: var(--accent-color-light-brown-60);
+}
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
@@ -130,6 +180,7 @@ select:-webkit-autofill:focus {
 
 /* SITE-HEADER-INTRO-WRAPPER */
 .site-header-hero-wrapper {
+  background-color: var(--light-brawn);
   background-image: url(../img/site-header-intro-bg.jpg);
 }
 
@@ -199,6 +250,59 @@ select:-webkit-autofill:focus {
 .sitenav-link:active {
   opacity: 0.6;
 }
+
+
+/* HERO */
+.hero {
+  
+}
+
+.hero-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero-info-wrapper {
+  width: 100%;
+  max-width: 730px;
+  padding-top: 116px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 116px;
+}
+
+.hero-heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 64px;
+  line-height: normal;
+  font-weight: bold;
+  color: #000;
+}
+
+.hero-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.hero-text:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.hero-img {
+  width: 710px;
+  height: 596px;
+  object-fit: cover;
+}
+
+.hero-img-index {
+  height: 696px;
+}
+
+
 
 
 @media
