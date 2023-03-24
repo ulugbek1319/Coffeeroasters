@@ -149,6 +149,7 @@ select:-webkit-autofill:focus {
 }
 
 .site-header-logo-link {
+  flex-shrink: 0;
   display: flex;
   text-decoration: none;
 }
@@ -188,6 +189,7 @@ select:-webkit-autofill:focus {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 .sitenav-link:hover {
